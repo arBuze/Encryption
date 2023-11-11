@@ -1,0 +1,7 @@
+.encryption__form {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  gap: 30px;
+}

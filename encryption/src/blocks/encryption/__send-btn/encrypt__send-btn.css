@@ -1,0 +1,15 @@
+.encrypt__send-btn {
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFF;
+  background-color: #000;
+  border: none;
+  padding: 7px 0;
+}
+
+.encrypt__send-btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #D9D9D9;
+}

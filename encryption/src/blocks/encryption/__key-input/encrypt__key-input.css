@@ -1,0 +1,12 @@
+.encrypt__key-input {
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 5px 12px 6px;
+}
+
+.encrypt__key-input:focus, .encrypt__key-input:focus + .encryption__save-btn {
+  outline: none;
+  border-bottom: 2px solid #1B0089;
+}

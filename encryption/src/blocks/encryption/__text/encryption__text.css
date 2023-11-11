@@ -1,0 +1,16 @@
+.encryption__text {
+  max-width: 50vw;
+  width: 100%;
+  min-width: 300px;
+  max-height: 50vh;
+  height: calc(100% - 60px);
+  display: inline-block;
+  line-height: 1.5;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.encryption__text:focus {
+  outline: none;
+}

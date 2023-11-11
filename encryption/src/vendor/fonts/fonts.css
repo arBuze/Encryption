@@ -1,0 +1,16 @@
+
+@font-face {
+  src: url(Montserrat-Regular.woff) format('woff'),
+       url(Montserrat-Regular.woff2) format('woff2'),
+       url(Montserrat-Regular.ttf) format('truetype');
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(Montserrat-Bold.woff) format('woff'),
+       url(Montserrat-Bold.woff2) format('woff2'),
+       url(Montserrat-Bold.ttf) format('truetype');
+  font-family: 'Montserrat';
+  font-weight: 700;
+}

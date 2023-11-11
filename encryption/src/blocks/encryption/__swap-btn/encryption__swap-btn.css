@@ -1,0 +1,15 @@
+.encryption__swap-btn {
+  height: 30px;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+.encryption__swap-btn:hover {
+  cursor: pointer;
+  background-color: #C9C9C9;
+}
+
+.encryption__swap-btn:disabled:hover {
+  background-color: #D9D9D9;
+  cursor: default;
+}

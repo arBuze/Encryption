@@ -1,0 +1,16 @@
+.encryption {
+  display: flex;
+  max-width: 80vw;
+  width: fit-content;
+  height: 410px;
+  position: relative;
+  background-color: #E9F0FF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  border: 1px dashed #00164F;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 25px 30px;
+}

@@ -1,0 +1,13 @@
+.encryption__file-cover {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: calc(100% - 60px);
+  background: url('../../../images/file.png') no-repeat center;
+  background-color: #FFF;
+}
+
+.encryption__file-cover:hover {
+  cursor: pointer;
+}

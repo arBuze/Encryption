@@ -1,0 +1,9 @@
+.encryption__file-caption {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  color: #C9C9C9;
+  top: calc(50% + 45px);
+  left: calc(50% - 47px);
+}

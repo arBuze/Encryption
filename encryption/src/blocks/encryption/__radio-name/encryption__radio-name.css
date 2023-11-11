@@ -1,0 +1,9 @@
+.encryption__radio-name {
+  display: inline-block;
+  width: 270px;
+  background-color: #FFF;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+}

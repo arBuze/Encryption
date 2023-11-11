@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="page">
+    <main class="main">
+      <section class="encryption">
+        <!-- <div class="encryption__btn-container">
+          <h1 class="encription__name">Шифрование</h1>
+          <button class="encryption__encrypt" type="button" name="encrypt">Зашифровать</button>
+          <button class="encryption__encrypt" type="button" name="decrypt">Расшифровать</button>
+        </div> -->
+        <form class="encryption__form" method="post" name="encryption">
+          <div class="encryption__container">
+            <fieldset class="encrypt__actions">
+              <h2 class="encryption__title">Действия</h2>
+              <label class="encryption__radio-name">
+                <input class="encryption__radio" type="radio" name="method" value="encrypt" id="encrypt" checked>
+                шифрование
+              </label>
+              <label class="encryption__radio-name">
+                <input class="encryption__radio" type="radio" name="method" value="descrypt" id="descrypt">
+                расшифрование
+              </label>
+            </fieldset>
+            <fieldset class="encryption__key">
+              <input type="text" class="encrypt__key-input" name="key" placeholder="ключ" value="">
+              <button class="encryption__save-btn" type="button"></button>
+            </fieldset>
+            <button class="encrypt__send-btn" name="send-btn">выполнить</button>
+          </div>
+          <div class="encryption__text-container">
+            <select class="encryption__select" name="objects" id="objects">
+              <option class="encryption__select-choice" value="text" selected>Текст</option>
+              <option class="encryption__select-choice" value="file">Файл</option>
+            </select>
+            <!-- <textarea class="encryption__text" name="text" autofocus placeholder="Введите текст для шифрования" required></textarea> -->
+            <input class="encryption__file-input" type="file" id="file">
+            <label class="encryption__file-cover" for="file">
+              <span class="encryption__file-caption">выберите файл</span>
+            </label>
+            <button class="encryption__swap-btn" type="button" disabled></button>
+          </div>
+        </form>
+        <button class="encryption__return-btn" type="button"></button>
+      </section>
+      <div class="popup">
+        <div class="popup__container">
+          <p class="popup__message">aggg aweggg weeadeeg WWWWWWWWWWEG wwwwwwww eeessssssssssssssss sssssss sssssseeeeeeeeeeeeeeeeewwwe</p>
+          <button class="popup__close-btn"></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

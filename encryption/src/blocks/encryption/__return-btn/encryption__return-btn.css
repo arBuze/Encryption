@@ -1,0 +1,13 @@
+.encryption__return-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background: url('../../../images/arrow-left.svg') no-repeat center;
+  border: none;
+}
+
+.encryption__return-btn:hover {
+  cursor: pointer;
+}
