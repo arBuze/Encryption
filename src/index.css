@@ -3,6 +3,8 @@
 @import url(./blocks/page/page.css);
 @import url(./blocks/main/main.css);
 @import url(./blocks/encryption/encryption.css);
+@import url(./blocks/encryption/__btn-container/encryption__btn-container.css);
+@import url(./blocks/encryption/__name/encryption__name.css);
 @import url(./blocks/encryption/__encrypt/encryption__encrypt.css);
 @import url(./blocks/encryption/__form/encryption__form.css);
 @import url(./blocks/encryption/__container/encryption__container.css);
