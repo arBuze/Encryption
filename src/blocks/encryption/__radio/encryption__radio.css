@@ -1,3 +1,7 @@
+.encryption__radio {
+  margin-right: 5px;
+}
+
 .encryption__radio:hover {
   cursor: pointer;
 }

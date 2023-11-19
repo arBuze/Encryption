@@ -24,7 +24,9 @@
 @import url(./blocks/encryption/__file-caption/encryption__file-caption.css);
 @import url(./blocks/encryption/__swap-btn/encryption__swap-btn.css);
 @import url(./blocks/encryption/__return-btn/encryption__return-btn.css);
+@import url(./blocks/encryption/__link/encryption__link.css);
 @import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__message/popup__message.css);
 @import url(./blocks/popup/__close-btn/popup__close-btn.css);
