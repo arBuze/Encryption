@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Encryption/static/css/main.709e048b.css",
+    "main.js": "/Encryption/static/js/main.ff7bf858.js",
+    "static/js/787.8f26e750.chunk.js": "/Encryption/static/js/787.8f26e750.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/Encryption/static/media/Montserrat-Regular.317b418ed317e258b173.ttf",
+    "static/media/Montserrat-Bold.ttf": "/Encryption/static/media/Montserrat-Bold.5885feb264991825e67f.ttf",
+    "static/media/Montserrat-Bold.woff": "/Encryption/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
+    "static/media/Montserrat-Regular.woff": "/Encryption/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
+    "static/media/Montserrat-Regular.woff2": "/Encryption/static/media/Montserrat-Regular.8b56391ed36ea95337c6.woff2",
+    "static/media/Montserrat-Bold.woff2": "/Encryption/static/media/Montserrat-Bold.cfceaf4e74789fc9df24.woff2",
+    "static/media/save-item.svg": "/Encryption/static/media/save-item.902ebcedb973216ef72e.svg",
+    "static/media/close-btn.svg": "/Encryption/static/media/close-btn.6e9f7cf05b87943725f8.svg",
+    "index.html": "/Encryption/index.html",
+    "static/media/arrow-left.svg": "/Encryption/static/media/arrow-left.8f0ad5694ff5412fa5f0.svg",
+    "static/media/swap.svg": "/Encryption/static/media/swap.cc739c4ec394d1ab0714.svg",
+    "main.709e048b.css.map": "/Encryption/static/css/main.709e048b.css.map",
+    "main.ff7bf858.js.map": "/Encryption/static/js/main.ff7bf858.js.map",
+    "787.8f26e750.chunk.js.map": "/Encryption/static/js/787.8f26e750.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.709e048b.css",
+    "static/js/main.ff7bf858.js"
+  ]
+}
