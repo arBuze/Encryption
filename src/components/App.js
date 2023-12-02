@@ -7,6 +7,7 @@ import { encryptData, decryptData, keySave } from './Crypt';
 
 function App() {
   const [isPopupOpened, setIsPopupOpened] = useState(false);
+  const [popupMessage, setPopupMessage] = useState('');
   const [methodOpt, setMethodOpt] = useState('');
   const [selectType, setSelectType] = useState('text');
   const [keyValue, setKeyValue] = useState('');
@@ -23,11 +24,15 @@ function App() {
 
   function handleKeyChange(key) {
     setKeyValue(key);
-    handlePopupOpen();
   }
 
   function handleKeySave() {
+    if (!keyValue) {
+      handlePopupOpen('Ключ не может быть пустым');
+      return 'Ошибка';
+    }
     setPath(keySave(keyValue));
+    handlePopupOpen('Файл сохранен!');
   }
 
   function handleEncrypt(formValue) {
@@ -37,19 +42,29 @@ function App() {
 
     if (selectType === 'file') {
       setPath(filePath);
-      handlePopupOpen();
+      handlePopupOpen('Файл сохранен!');
     }
     return value;
   }
 
   function handleDecrypt(formValue) {
-    setSwapText(formValue);
+    if (!keyValue) {
+      handlePopupOpen('Ключ не может быть пустым');
+      return 'Ошибка';
+    }
 
-    const { value, filePath } = decryptData(formValue, keyValue, selectType);
+    const result = decryptData(formValue, keyValue, selectType);
+    if (result.error) {
+      handlePopupOpen(result.error);
+      return 'Ошибка' ;
+    }
+
+    setSwapText(formValue);
+    const { value, filePath } = result;
 
     if (selectType === 'file') {
       setPath(filePath);
-      handlePopupOpen();
+      handlePopupOpen('Файл сохранен!');
     }
     return value;
   }
@@ -58,12 +73,14 @@ function App() {
     setSwapValue(text);
   }
 
-  function handlePopupOpen() {
+  function handlePopupOpen(text) {
+    setPopupMessage(text);
     setIsPopupOpened(true);
   }
 
   function handlePopupClose() {
     setIsPopupOpened(false);
+    setPopupMessage('');
   }
 
   function handleReturn() {
@@ -88,7 +105,7 @@ function App() {
         }
       </section>
     </main>
-    <Popup isOpen = {isPopupOpened} onClose = {handlePopupClose} path = {path} />
+    <Popup isOpen = {isPopupOpened} message={popupMessage} onClose = {handlePopupClose} />
   </div>
   );
 }

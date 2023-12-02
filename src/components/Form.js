@@ -45,11 +45,19 @@ export default function Form(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    let result = '';
     if (props.option === 'encrypt') {
-      setFormValue(props.onEncrypt(formValue));
+      result = props.onEncrypt(formValue);
     } else {
-      setFormValue(props.onDecrypt(formValue));
+      result = props.onDecrypt(formValue);
     }
+
+    if (result === 'Ошибка') {
+      console.log(result);
+      return;
+    }
+    setFormValue(result);
+
     if (props.type === 'file') {
       setTimeout(() => {
         link.click();

@@ -11,7 +11,6 @@ export function encryptData(value, type) {
   if (type === 'file') {
     let blob = new Blob([encryptedData], {type:'text/plain'});
     filePath = window.URL.createObjectURL(blob);
-    console.log(blob);
   }
 
   return ({ value: encryptedData, secretKey, filePath });
@@ -21,13 +20,18 @@ export function decryptData(value, key, type) {
   let decryptedData = '';
   let filePath = '';
 
-  decryptedData = CryptoJS.Rabbit.decrypt(value, key).toString(CryptoJS.enc.Utf8);
+  try {
+    decryptedData = CryptoJS.Rabbit.decrypt(value, key).toString(CryptoJS.enc.Utf8);
+  } catch(err) {
+    return ({ error: `Ошибка: ${err}` });
+  }
+
 
   if (type === 'file') {
     let blob = new Blob([decryptedData], {type:'text/plain'});
     filePath = window.URL.createObjectURL(blob);
   }
-  
+
   return ({ value: decryptedData, filePath });
 };
 
